@@ -1,0 +1,121 @@
+<!-- my Api key:     AIzaSyDyxOrWLFB3rFhsEWs6RDeOZPnMtxBNfYs -->
+<!-- url:  'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=toy%20story&key=[YOUR_API_KEY]' \ -->
+<!-- url of most popular: 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=20&regionCode=in&key=[YOUR_API_KEY]' -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="youtube.css"/>
+    <style>
+        .nav-left>img{
+            width: 40px;
+        }
+        .nav-right>img{
+            width: 40px;
+        }
+        .nav-left{
+            /*  */
+            width: 200px;
+            
+           
+        }
+        .nav-right{
+            /*  */
+            width: 20%;
+            display: flex;
+            justify-content: space-evenly
+           
+        }
+        .nav-middle{
+            display: flex;
+            /*  */
+            width: 40%;
+        }
+        input{
+            display: block;
+            height: 35px;
+            width: 100%;
+            font-size: 16px;
+           
+        }
+        button{
+            display: block;
+        }
+        .flex-div{
+            display: flex;
+            align-items: center;
+            /*  */
+        }
+        
+        
+        nav{
+            padding: 10px 2%;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            position: static;
+            margin-bottom: 40px;
+
+        }
+        #you{
+            width: 120px;
+            margin-bottom: 5px;
+            margin-left: 15px;
+        }
+        #filter{
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            margin: auto;
+            margin-bottom: 40px;
+
+        }
+        #main{
+            display: flex;
+            
+           
+        }
+        #side{
+            margin-right: 30px;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left">
+            <img src="https://static.thenounproject.com/png/696519-200.png" alt="">
+            <img id="you" src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-9.png" alt="">
+        </div>
+        <div class="nav-middle">
+            <input placeholder="Search" type="text" id="query">
+            <button style="width: 60px; background-color: rgb(224, 229, 231); " onclick="search()">
+            <img style="width: 25px;" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt=""></button>
+        </div>
+        <div class="nav-right">
+            <img src="https://ipevo-api-cms.s3-us-west-1.amazonaws.com/software/visualizer/images/f-visualizer-mac-video_recording.svg?20220705003622" alt="">
+            <img src="https://www.shareicon.net/data/128x128/2017/03/22/881329_user_512x512.png" alt="">
+            <img src="https://static.thenounproject.com/png/1155758-200.png" alt="">
+            <img style="border-radius: 20px ;" src="https://yt3.ggpht.com/yti/APfAmoGXN5ADEbrTbAYMbdwtFg4t3xCWEEXxM1JeVJb4Xg=s88-c-k-c0x00ffffff-no-rj-mo" alt="">
+           
+        </div>
+    </nav>
+    <button id="filter" onclick="filter()">Videos in 2022 ( Filter )</Video></button>
+    <div id="main">
+    <div id="side">
+    
+    <img style=" width: 250px;" src="image.png" alt="">
+    </div>
+    
+    <div id="container">
+    </div>
+</div>
+</body>
+</html>
+<script src="youtube.js"></script>
